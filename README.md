@@ -1,0 +1,1 @@
+# textManipulator_js
