@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>TextManipulator</title>
 </head>
 <body>
@@ -12,14 +12,16 @@
         <h1>Text Manipulator</h1>
     </div>
     <div id="main">
-        <textarea placeholder="enter the text here" rows="4" cols="50"></textarea>
+        <textarea id="uText" placeholder="enter the text here" rows="4" cols="50"></textarea>
     </div>
     <div>
-        <button>lower case</button>
-        <button>upper case</button>
-        <button>lower case</button>
-        <button>lower case</button>
+        <button id="lowerCase">lower case</button>
+        <button id="upperCase">upper case</button>
+        <button id="mixedCase">MIxeDcAse</button>
+        <button id="inverseCase">InVeRsEcAsE</button>
+        <button id="clear">clear</button>
+        <button id="copy">copy</button>
     </div>
-
+    
 </body>
 </html>
