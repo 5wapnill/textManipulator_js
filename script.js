@@ -3,6 +3,7 @@ let lowerCase = document.querySelector("#lowerCase");
 let upperCase = document.querySelector("#upperCase");
 let inverseCase = document.querySelector("#inverseCase");
 let mixedCase = document.querySelector("#mixedCase");
+let titleCase = document.querySelector("#titleCase");
 
 let clear = document.querySelector("#clear");
 
@@ -33,13 +34,28 @@ mixedCase.addEventListener("click", () => {
     let uTextV = uText.value;
     let temp = "";
     for(let i = 0; i < uTextV.length; i++){
-        if((Math.random()*11) % 2 == 0) {
+        if(parseInt(Math.random()*10) % 2 == 1) {
             temp += uTextV[i].toLowerCase();
         } else {
             temp += uTextV[i].toUpperCase();
         }
     }
     uText.value = temp;
+});
+
+titleCase.addEventListener("click", () => {
+    let uTextV = uText.value;
+    let temp = "";
+    uTextV.toLowerCase();
+    for(let i = 0; i < uTextV.length; i++){
+
+        if(uTextV[i] == " ")
+        {
+            uTextV[i+1] = uTextV[i+1].toUpperCase();
+            i++
+        } 
+    }
+    uText.value = uTextV;
 });
 
 clear.addEventListener("click", () => {
