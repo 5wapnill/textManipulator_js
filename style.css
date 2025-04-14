@@ -51,10 +51,16 @@ p {
 }
 
 #btnDiv{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .btn{
-    width: 10em;
+    width: 11em;
+    font-size: 1em;
     font-weight: 700;
     padding: 20px;
     background-color:rgba(0, 0, 0, 0);
