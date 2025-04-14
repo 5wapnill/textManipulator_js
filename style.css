@@ -1,20 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    outline: red 1px solid;
+    /* outline: red 1px solid; */
+    font-family: 'Syne', sans-serif;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 4em;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
 }
 
 #heading{
     color: white;
+    font-size: 4em;
+}
+
+textarea{
+    background-color: #ffffffe8;
+    padding: 20px;
+    outline: 0px;
+    border-radius: 10px;
+    text-align: center;
+}
+textarea::placeholder {
+    font-size: 20px;
+}
+
+
+
+#btnDiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30em;
+    gap: 20px;
+}
+
+.btn{
+    width: 10em;
+    height: 5em;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 3em;
 }

@@ -6,6 +6,7 @@ let mixedCase = document.querySelector("#mixedCase");
 let titleCase = document.querySelector("#titleCase");
 
 let clear = document.querySelector("#clear");
+let copy = document.querySelector("#copy");
 
 lowerCase.addEventListener("click", () => {
     uText.value = (uText.value).toLowerCase();
@@ -61,3 +62,8 @@ titleCase.addEventListener("click", () => {
 clear.addEventListener("click", () => {
     uText.value = "";
 })
+copy.addEventListener("click", () => {
+    navigator.clipboard.writeText(uText.value);
+})
+
+
