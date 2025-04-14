@@ -4,18 +4,19 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* outline: red 1px solid; */
+    outline: red 1px solid;
     font-family: 'Syne', sans-serif;
 }
 
 body{
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 4em;
     align-items: center;
     justify-content: center;
-    background-color: rgb(0, 0, 0);
-    padding: 30px;
+    padding: 10px;
+    background: #0f0f0f;
 }
 
 #heading{
@@ -41,19 +42,20 @@ textarea:focus::placeholder {
     transition: opacity 0.3s ease;
 }
 
-
+p {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
 #btnDiv{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 30em;
-    gap: 20px;
 }
 
 .btn{
     width: 10em;
-    height: 5em;
+    font-weight: 700;
     padding: 20px;
     background-color:rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
