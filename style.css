@@ -1,4 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@font-face {
+    font-family: 'Syne';
+    src: url('./fonts/static/Syne-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Syne';
+    src: url('./fonts/static/Syne-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Syne';
+    src: url('./fonts/Syne-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 800;
+    font-style: normal;
+}
 
 *{
     margin: 0px;
