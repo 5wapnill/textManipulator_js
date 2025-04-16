@@ -19,6 +19,21 @@
     font-style: normal;
 }
 
+html {
+    background: radial-gradient(
+      circle at 30% 30%,
+      #1a1a2e 10%,
+      #16213e 30%,
+      #092241 50%,
+      #2a3a43 70%,
+      #00293f 90%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
 *{
     margin: 0px;
     padding: 0px;
@@ -28,14 +43,14 @@
 }
 
 body{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 4em;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background: #0f0f0f;
+    /* background: #0f0f0f; */
 }
 
 #heading{
@@ -44,7 +59,7 @@ body{
 }
 
 textarea{
-    background-color: #ffffffe8;
+    background-color: #ffffff;
     padding: 20px;
     outline: 0px;
     border-radius: 10px;
