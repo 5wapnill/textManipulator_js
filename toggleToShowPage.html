@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>javaScript</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 189, 189);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main {
+            z-index: 1;
+            position: fixed;
+            background-color: white;
+            width: 50%;
+            height: 50%;
+            padding: 10px;
+        }
+
+        #cross {
+            position: absolute;
+            right: 10px;
+            padding: 3px;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+
+        #toggle {
+            border: 0px;
+            outline: none;
+            padding: 20px;
+            border-radius: 2em;
+            font-size: 1.5em;
+            transition: 0.3s;
+        }
+
+        #toggle:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="toggle">show</button>
+    <div id="main">
+        let's go
+        <span id="cross">X</span>
+    </div>
+</body>
+<script>
+    const main = document.querySelector('#main');
+    const cross = document.querySelector("#cross");
+    const button = document.querySelector('#toggle');
+    console.log(main);
+
+    button.addEventListener('click', () => {
+        main.classList.toggle('hide');
+    })
+
+    cross.addEventListener("click", () => {
+        console.log("clicked");
+        main.classList.toggle('hide');
+    })
+</script>
+
+</html>
